@@ -25,7 +25,7 @@ SECRET_KEY = 'o2fvi-pcdw%ia9ki)2t&($-9&d!e1bm9)58u1(xq7j$w3m9xc_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'tolkadot.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'tolka.pythonanywhere.com']
 
 
 # Application definition
