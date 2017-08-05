@@ -1,0 +1,36 @@
+
+  {% load staticfiles %}
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  <title>DJANGO GIRLS</title>
+  <meta name="description" content="DJANGO GIRLS">
+  <meta name="author" content="tolakdot">
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<div>
+
+</div>
+
+
+
+  {% for blog in blog %}
+    <div>
+        <p>published: {{ blog.published_date }}</p>
+        <h1><a href="">{{ blog.title }}</a></h1>
+        <p>{{ blog.text }}</p>
+        <p>{{ blogs.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+</body>
+</html>
